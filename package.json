@@ -1,0 +1,26 @@
+{
+  "name": "adamantium",
+  "version": "1.0.0",
+  "description": "Proyecto que permite conocer el trámite ante el SAT para incentivar la transformación del negocio informal ante la formalidad.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DianaG-M/adamantium.git"
+  },
+  "keywords": [
+    "financiero",
+    "adamantio",
+    "adamantium",
+    "SAT",
+    "tramkites"
+  ],
+  "author": "Paulina Zedillo, Lorena Guido, Elsy Cardona, Diana Gutiérrez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DianaG-M/adamantium/issues"
+  },
+  "homepage": "https://github.com/DianaG-M/adamantium#readme"
+}
