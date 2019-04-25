@@ -1,58 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Adamantium</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
+  <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+
+  <title>Adamantium</title>
 </head>
+
 <body>
-    <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-secondary">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon">Adamantium</span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <a class="navbar-brand" href="#">Hidden brand</a>
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
-      </nav>
+  <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-secondary">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+      aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">Adamantium</span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <a class="navbar-brand" href="#">Menú</a>
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="#main-menu">Inicio<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#information">Información</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#login">Registro</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-    <main id="main-menú"><p>Las barras de navegación pueden utilizar .navbar-toggler, .navbar-collapsey las 
-        .navbar-expand{-sm|-md|-lg|-xl}clases 
-        para cambiar cuando su contenido se colapsa detrás de un botón. En combinación con otras 
-        utilidades, puede elegir fácilmente cuándo mostrar u ocultar elementos particulares.
+  <main id="main-menu" class="section-app">
+    <p>Las barras de navegación pueden utilizar .navbar-toggler, .navbar-collapsey las
+      .navbar-expand{-sm|-md|-lg|-xl}clases
+      para cambiar cuando su contenido se colapsa detrás de un botón. En combinación con otras
+      utilidades, puede elegir fácilmente cuándo mostrar u ocultar elementos particulares.
 
-        Para las barras de navegación que nunca se colapsan, agregue la .navbar-expandclase en la 
-        barra de navegación. Para las barras de navegación que siempre colapsan, no agregue ninguna 
-        .navbar-expandclase.</p></main>
+      Para las barras de navegación que nunca se colapsan, agregue la .navbar-expandclase en la
+      barra de navegación. Para las barras de navegación que siempre colapsan, no agregue ninguna
+      .navbar-expandclase.</p>
+  </main>
 
-    <footer>
-        <nav class="navbar fixed-bottom navbar-dark bg-secondary">
-            <span class="navbar-brand mb-0 h1">Footer</span>
-        </nav>
-    </footer>
+  <section id="information" class="section-app">
+    <p>Aquí va la Información</p>
+  </section>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <section id="login" class="section-app">
+    <p> Aquí va el login</p>
+    <h1>Regístrate en nuestra página</h1>
+    <!-- <div id="firebaseui-auth-container"></div> -->
+    <button id="login">Regístrate con tu cuenta de Google</button>
+    <div id="loader">Loading...</div>
+  </section>
+
+  <section id="level-1" class="section-app">
+    <button id="logout">Cerrar sesión</button>
+  </section>
+
+  <footer>
+    <nav class="navbar fixed-bottom navbar-dark bg-secondary">
+      <span class="navbar-brand mb-0 h1">Footer</span>
+    </nav>
+  </footer>
+
+  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-firestore.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="./javascript/firebase.js">
+  </script>
+
 
 </body>
+
 </html>
